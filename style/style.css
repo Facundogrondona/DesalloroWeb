@@ -5,7 +5,7 @@
 }
 
 .bodyGeneral {
-  background-color: #d3bbfb;
+  background-color: #9d4cfd;
   font-family: 'Poppins', sans-serif;
   text-decoration-color: #2f2546;
   padding: 60px 10px 0px;
@@ -18,7 +18,7 @@
 }
 
 header {
-  height: 60px;
+  height: 66px;
   /* Medida Movil */
   /* height: 80px; /* Medida Patalla */
   position: fixed;
@@ -26,12 +26,14 @@ header {
   top: 0;
   left: 0;
   z-index: 100;
+  background-color: #dbdbdb ;
 
 }
 
 .nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   /* Medida Movil */
   /* justify-content: space-evenly; /* Medida Patalla */
   max-width: 992px;
@@ -47,7 +49,7 @@ header {
   align-items: center;
   background-color: #2f2546;
   position: fixed;
-  top: 60px;
+  top: 66px;
   width: 100%;
   padding: 20px 0;
   height: calc(100% - 60px);
@@ -97,7 +99,9 @@ header {
 }
 
 .navLogo {
-  padding-top: 0px;
+  padding-top: 2px;
+  padding-left: 2px;
+  
   /* Medida Movil */
   /* padding-top: 7px; /* Medida Pantalla */
 
@@ -121,6 +125,26 @@ header {
   right: 0;
 }
 
+.navRegistro{
+  text-decoration: dashed;
+  color: #2f2546;
+  background: none;
+  border: none;
+  font-size: 13px;
+  padding: 0 20px;
+  line-height: 60px;
+}
+
+.navSeccion{
+  text-decoration: none;
+  color: #2f2546;
+  background: none;
+  border: none;
+  font-size: 13px;
+  padding: 0 20px;
+  line-height: 60px;
+}
+
 /* visibiliza el boton */
 
 .nombreEmpresa {
@@ -130,10 +154,15 @@ header {
 }
 
 .subTitulo {
-  font-size: 20px;
+  font-size: 15px;
   padding-bottom: 30px;
-  font-style: italic;
+  margin-left: 100px;
 
+}
+
+.aa{
+  margin-bottom: 20px;
+  color: white;
 }
 
 .fraseInicio {
@@ -146,7 +175,6 @@ header {
   border: 10px solid white;
   border-radius: 40px;
   background-color: white;
-  font-size: 24px;
   /* width: 550px; /*Vista pantalla */
 
 }
@@ -157,8 +185,9 @@ header {
   justify-content: space-evenly;
   font-family: 'Poppins', sans-serif;
   font-size: 20px;
-  margin-top: 10px;
+  margin-top: 20px;
   background-color: #54ac84;
+  border-radius: 15px;
   border-style: solid;
   border-color: #54ac84;
   padding: 10px;
@@ -267,6 +296,30 @@ header {
   color: white;
 
 }
+
+.tituloRegistro {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 10px solid #54ac84;
+  border-radius: 35px;
+  background-color: #54ac84;
+  color: white;
+  
+}
+.seccionRegistro{
+  display: block;
+  background-color: white;
+  padding: 20px;
+  border: solid #54ac84;
+  border-radius: 10px;
+}
+
 
 .descripServicios {
   display: flex;
@@ -466,19 +519,11 @@ header {
 /* Sección Contacto? y registro */
 
 .formatoForm {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-content: stretch;
-  width: 100%;
-  margin-top: 20px;
-  padding: 20px;
-  border: 10px solid #f0eaf6;
-  border-radius: 40px;
-  background-color: #f0eaf6;
-  font-size: 14px;
+ margin-top: 8px;
 
 }
+
+
 
 /* Terminos y Privacidad*/
 
@@ -534,6 +579,10 @@ footer ul li:hover {
 
 @media only screen and (min-width: 530px) {
 
+  .navMenu{
+    height: auto;
+  }
+
   .descripServicios {
     display: block;
 
@@ -572,10 +621,11 @@ footer ul li:hover {
 /* Fin de la adaptación a tablet */
 
 
+
 @media only screen and (min-width: 1024px) {
 
   .bodyGeneral {
-    padding: 90px 20px 0px;
+    padding: 100px 20px 0px;
 
   }
 
@@ -595,21 +645,63 @@ footer ul li:hover {
   }
 
   .navMenu {
-    width: fit-content;
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    background-color: #2f2546;
+    position: fixed;
+    top: 66px;
+    width: 100%;
+    padding: 0px 0;
+    overflow-y: auto;
+    transition: right 0.3s;
+    align-items: center;
+    justify-content: space-around;
     height: fit-content;
   }
-
   .vistaMovil {
     align-items: flex-start;
+    width: fit-content;
+  }
+
+
+  .navRegistro{
+    font-size: 20px;
+  }
+  
+  .navSeccion{
+    font-size: 20px;
   }
 
   .aa {
     margin-left: 30px;
   }
 
-  .parrafoPrincipal {
-    width: 500px;
+  .formatoInicio{
+    display: flex;
+    align-items: flex-start;
 
+
+  }
+  .parrafoPrincipal {
+    width: 500px; 
+
+  }
+
+   .imagenUno{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 2;
+    border-radius: 20px;
+    margin-top: 60px;
+
+  }
+
+  .grafico1{
+    border: solid #2f2546;
+    border-radius: 20px;
   }
 
   .parrafoSecundario {
@@ -620,12 +712,12 @@ footer ul li:hover {
   }
 
   .imagen1024 {
-    transform: scale(1);
+    transform: scale();
   }
 
   .imagensecundario {
 
-    transform: scale(40%);
+    transform: scale(50%);
   }
 
   .parrafoPublicidad {
@@ -722,5 +814,16 @@ footer ul li:hover {
     align-content: center;
     color: white;
 
+  }
+
+
+  /* Sesicon Registro */
+
+  .seccionRegistro{
+    margin-left: 170px;
+  }
+
+  .tituloRegistro{
+    margin-top: 35px;
   }
 }
