@@ -1,0 +1,89 @@
+/* Secion Nosotros */
+
+.artributosFrase {
+    grid-area: frase;
+    margin-top: 30px;
+  
+  }
+  
+  .forma {
+    display: grid;
+    padding: 10px;
+    background-color: white;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    justify-content: center;
+    align-content: center;
+  
+  }
+  
+  .atributo {
+    display: grid;
+    grid-template-areas:
+      "INNOVADOR INTELIGENTE"
+      "ACCESIBLE CONFIABLE"
+      "SÓLIDO CANCHERO";
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 15px;
+    justify-items: center;
+    align-items: center;
+    margin-top: 15px;
+     
+    h3 {
+      display: grid;
+      padding: 10px;
+      background-color: white;
+      height: 150px;
+      width: 150px;
+      border-radius: 50%;
+      justify-content: center;
+      align-content: center;
+    
+    }
+  
+    .artributos1 {
+      grid-area: INNOVADOR;
+      background-color: #ff89a6;
+      color: white;
+    
+    }
+    
+    .artributos2 {
+      grid-area: INTELIGENTE;
+      background-color: #f7ac21;
+      color: white;
+    
+    }
+    
+    .artributos3 {
+      grid-area: ACCESIBLE;
+      background-color: #d9e2ff;
+      color: white;
+    
+    }
+    
+    .artributos4 {
+      grid-area: SÓLIDO;
+      background-color: #e087f0;
+      color: white;
+    
+    }
+    
+    .artributos5 {
+      grid-area: CONFIABLE;
+      background-color: #fd3636;
+      color: white;
+    
+    }
+    
+    .artributos6 {
+      grid-area: CANCHERO;
+      background-color: #6ff7e0;
+      color: white;
+    
+    }
+  
+  }

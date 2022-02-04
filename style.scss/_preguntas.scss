@@ -1,0 +1,35 @@
+.pYr {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+  
+  }
+  
+  .preguntas {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 100%;
+    margin-top: 20px;
+    padding: 20px;
+    border: 10px solid white;
+    border-radius: 40px;
+    background-color: white;
+    font-size: 14px;
+  
+  }
+  
+  .respuestas {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 100%;
+    margin-top: 20px;
+    padding: 20px;
+    border: 10px solid #80b7a2;
+    border-radius: 40px;
+    background-color: #80b7a2;
+    font-size: 14px;
+    color: white;
+  
+  }

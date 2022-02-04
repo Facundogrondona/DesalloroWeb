@@ -1,0 +1,108 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* Medida Movil */
+  /* justify-content: space-evenly; /* Medida Patalla */
+  max-width: 992px;
+  margin: 0 auto;
+  position: fixed;
+
+  .navLogo {
+    padding-top: 2px;
+    padding-left: 2px;
+    color: white;
+    text-decoration: none;
+
+    /* Medida Movil */
+    /* padding-top: 7px; /* Medida Pantalla */
+
+    &:hover {
+      transform: scale(150%);
+      transition: all;
+      transition-duration: 2s;
+
+    }
+  }
+
+  .navButton {
+    color: $colorNavbar;
+    background: none;
+    border: none;
+    font-size: 30px;
+    padding: 0 20px;
+    line-height: 60px;
+
+    display: block;
+    /*Boton visible pantalla celu */
+    /* display: none; /* Boton invisible para patalla completa*/
+
+  }
+
+  .navRegistro {
+    text-decoration: dashed;
+    color: $colorNavbar;
+    background: none;
+    border: none;
+    font-size: 13px;
+    padding: 0 20px;
+    line-height: 60px;
+  }
+
+  .navSeccion {
+    text-decoration: none;
+    color: $colorNavbar;
+    background: none;
+    border: none;
+    font-size: 13px;
+    padding: 0 20px;
+    line-height: 60px;
+  }
+
+  .navMenu {
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    align-items: center;
+    background-color: $colorNavbar;
+    position: fixed;
+    top: 66px;
+    width: 100%;
+    padding: 20px 0;
+    height: calc(100% - 60px);
+    overflow-y: auto;
+    right: 100%;
+    transition: right 0.3s;
+
+    /* margin-right: 20px; /*para pantalla completa */
+
+    .navmenuItem {
+      font-size: 18px;
+      margin: 0 10px;
+      line-height: 70px;
+      /*Medida Movil */
+      /* line-height: 80px; /* Medida Pantalla */
+      text-transform: uppercase;
+      width: max-content;
+
+      .navmenuLink {
+        padding: 8px 12px;
+        border-radius: 35px;
+        color: white;
+        text-decoration: none;
+
+        &:hover {
+          transition: 1s;
+          background: #54ac84;
+          background-image: linear-gradient(to left, #54ac84);
+
+        }
+      }
+    }
+  }
+
+  /* visibiliza el boton */
+  .nav_Visible {
+    right: 0;
+  }
+}

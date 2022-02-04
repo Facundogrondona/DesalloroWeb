@@ -1,0 +1,248 @@
+.vistaMovil {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+    flex-grow: 1;
+  
+    .nombreEmpresa {
+      padding-top: 0px;
+      font-size: 45px;
+  
+    }
+  
+    .subTitulo {
+      font-size: 15px;
+      padding-bottom: 30px;
+      margin-left: 100px;
+  
+    }
+  
+    .aa {
+      margin-bottom: 20px;
+      color: white;
+    }
+  
+    .fraseInicio {
+      padding-bottom: 15px;
+  
+    }
+  
+    .parrafoPrincipal {
+      padding: 20px;
+      border: 10px solid white;
+      border-radius: 40px;
+      background-color: white;
+      /* width: 550px; /*Vista pantalla */
+  
+    }
+  
+    .registroButton {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      font-family: 'Poppins', sans-serif;
+      font-size: 20px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      background-color: $colorboti3;
+      border-radius: 15px;
+      border-style: solid;
+      border-color: $colorboti3;
+      padding: 10px;
+      color: white;
+  
+    }
+  }
+  
+  .imagenUno {
+    display: none;
+  
+  }
+  
+  .parrafoSecundario {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 100%;
+    margin-top: 20px;
+    padding: 20px;
+    border: 10px solid white;
+    border-radius: 40px;
+    background-color: white;
+    font-size: 18px;
+  
+    img {
+      transform: scale(60%);
+    }
+  
+  }
+  
+  .parrafoPublicidad {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    margin-top: 20px;
+    padding: 20px;
+    border: 10px solid color $colorboti3;
+    border-radius: 40px;
+    background-color: $colorboti3;
+    color: white;
+    font-size: 14px;
+  
+    .graficoMovil {
+      border-radius: 12px;
+  
+    }
+  
+    .cuentaHijo1 {
+      grid-row: 3;
+    }
+  
+    .cuentaHijo3 {
+      grid-row: 0;
+    }
+  
+    .cuentaHijo4 {
+      grid-row: 0;
+    }
+  
+  }
+  
+  .secionesTitulo1024 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+    flex-grow: 1;
+  
+    .parrafoInvertir {
+      color: white;
+  
+    }
+  
+    .parrafoInvertirsecundario {
+      color: white;
+      font-size: 14px;
+  
+    }
+  
+  }
+  
+  .invertirRetirar {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 100%;
+    margin-top: 20px;
+    padding: 20px;
+    border: 10px solid white;
+    border-radius: 40px;
+    background-color: white;
+    font-size: 18px;
+  
+    .tituloInvertirretirar {
+      padding: 20px;
+  
+    }
+  
+    img {
+      transform: scale(60%);
+    }
+  
+  }
+  
+  .secionesTitulo {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+    padding: 20px;
+    border: 10px solid $colorboti3;
+    border-radius: 40px;
+    background-color: $colorboti3;
+    color: white;
+  
+  }
+  
+  .tituloRegistro {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 10px solid $colorboti3;
+    border-radius: 35px;
+    background-color: $colorboti3;
+    color: white;
+  
+  }
+  
+  .seccionRegistro {
+    display: block;
+    background-color: white;
+    padding: 20px;
+    border: solid $colorboti3;
+    border-radius: 10px;
+  }
+  
+  
+  .descripServicios {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+    padding: 20px;
+    border: 10px solid white;
+    border-radius: 40px;
+    background-color: white;
+  
+    .tamanoImagen {
+      height: 120px;
+      width: 100px;
+  
+    }
+  
+    .textoServicios {
+      display: flex;
+      flex-basis: 250px;
+  
+    }
+  
+  }
+  
+  .Costo {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 100%;
+    margin-top: 20px;
+    padding: 20px;
+    border: 10px solid white;
+    border-radius: 40px;
+    background-color: white;
+    font-size: 14px;
+  
+    .textoCostos {
+      background-color: $colorboti3;
+      border-color: solid $colorboti3;
+      border-radius: 8px;
+      padding: auto;
+  
+    }
+  
+  }

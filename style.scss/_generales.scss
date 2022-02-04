@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+  
+  }
+  
+  .bodyGeneral {
+    background-color: $colorBoti2;
+    font-family: 'Poppins', sans-serif;
+    text-decoration-color: $colorfuentesbc;
+    padding: 60px 10px 0px;
+    /* Medida movil */
+    /* padding: 90px 20px 0px; /* Medida pantalla */
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+    width: 100%;
+    -webkit-font-smoothing: antialiased;
+  
+  }
+  
+  header {
+    height: 66px;
+    /* Medida Movil */
+    /* height: 80px; /* Medida Patalla */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: #dbdbdb;
+  
+  }
