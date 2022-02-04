@@ -1,0 +1,34 @@
+footer {
+    padding: 50px;
+    margin-top: 10px;
+    margin-left: 0px;
+    border-radius: 15px;
+    margin-bottom: 0;
+    background-color: rgb(73, 5, 112);
+    width: 100%;
+  
+    ul {
+      list-style: none;
+      overflow: hidden;
+  
+      li {
+        font-family: 'Poppins', sans-serif;
+        font-size: 16px;
+  
+        a {
+          color: rgb(239, 236, 241);
+          text-decoration: none;
+  
+        }
+  
+        &:hover {
+          background: #cc80ff;
+          min-width: fit-content;
+          color: white;
+  
+        }
+      }
+  
+    }
+  
+  }

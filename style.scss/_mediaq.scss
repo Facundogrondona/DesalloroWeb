@@ -1,0 +1,205 @@
+@media only screen and (min-width: 530px) {
+
+    .navMenu {
+      height: auto;
+    }
+  
+    .parrafoPublicidad {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-around;
+      gap: 10px;
+      width: 100%;
+      margin-top: 20px;
+      padding: 20px;
+      border: 10px solid $colorboti3;
+      border-radius: 40px;
+      background-color: $colorboti3;
+      color: white;
+      font-size: 14px;
+  
+    }
+  
+    .descripServicios {
+      display: block;
+  
+    }
+  
+    /* Secion Nosotros */
+  
+    /* Seccion Como Empiezo? */
+  
+    /* Preguntas Frecuentes? */
+  
+    /* Sección Contacto? y registro */
+  
+    /* Terminos y Privacidad*/
+  
+  }
+  
+  /* Fin de la adaptación a tablet */
+  
+  @media only screen and (min-width: 1024px) {
+  
+    .bodyGeneral {
+      padding: 100px 20px 0px;
+  
+    }
+  
+    .nav {
+      .navLogo {
+        padding-left: 10px;
+      }
+  
+      .navRegistro {
+        font-size: 20px;
+      }
+  
+      .navSeccion {
+        font-size: 20px;
+      }
+  
+      .navMenu {
+        display: flex;
+        list-style: none;
+        flex-direction: row;
+        background-color: #2f2546;
+        position: fixed;
+        top: 66px;
+        width: 100%;
+        padding: 0px 0;
+        overflow-y: auto;
+        transition: right 0.3s;
+        align-items: center;
+        justify-content: space-around;
+        height: fit-content;
+      }
+  
+    }
+  
+    .formatoInicio {
+      display: flex;
+      align-items: flex-start;
+  
+      .vistaMovil {
+        align-items: flex-start;
+        width: fit-content;
+  
+        .nombreEmpresa {
+          padding-top: 0px;
+          font-size: 65px;
+          margin-left: 35px;
+  
+        }
+  
+        .subTitulo {
+          margin-left: 40px;
+        }
+  
+        .aa {
+          margin-left: 30px;
+        }
+  
+        .parrafoPrincipal {
+          width: 500px;
+  
+        }
+  
+      }
+  
+    }
+  
+    .imagenUno {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      flex-grow: 2;
+      border-radius: 20px;
+      margin-top: 60px;
+  
+      img {
+        border: solid #2f2546;
+        border-radius: 20px;
+      }
+  
+    }
+  
+    .parrafoSecundario {
+      flex-direction: row;
+      flex-wrap: nowrap;
+      align-items: center;
+  
+      .imagen1024 {
+        transform: scale();
+      }
+  
+    }
+  
+    .parrafoPublicidad {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      align-items: center;
+      justify-content: space-around;
+      gap: 10px;
+      width: 100%;
+      margin-top: 20px;
+      padding: 20px;
+      border: 10px solid $colorboti3;
+      border-radius: 40px;
+      background-color: $colorboti3;
+      color: white;
+      font-size: 14px;
+  
+    }
+  
+    .secionesTitulo1024 {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      align-items: center;
+      width: 100%;
+      margin-top: 20px;
+      padding: 20px;
+      border: 10px solid $colorboti3;
+      border-radius: 40px;
+      background-color: $colorboti3;
+      color: white;
+  
+    }
+  
+    .invertirRetirar {
+      flex-direction: row;
+      align-items: center;
+      font-size: 16px;
+  
+      .imagensecundario {
+  
+        transform: scale(50%);
+      }
+  
+    }
+  
+    .descripServicios {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      align-items: center;
+  
+    }
+  
+    /* Seccion Como Empiezo? */
+  
+    /* Sesicon Registro */
+  
+    .seccionRegistro {
+      margin-left: 170px;
+    }
+  
+    .tituloRegistro {
+      margin-top: 35px;
+    }
+  }

@@ -1,0 +1,906 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.bodyGeneral {
+  background-color: #9d4cfd;
+  font-family: 'Poppins', sans-serif;
+  -webkit-text-decoration-color: #2f2546;
+          text-decoration-color: #2f2546;
+  padding: 60px 10px 0px;
+  /* Medida movil */
+  /* padding: 90px 20px 0px; /* Medida pantalla */
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  width: 100%;
+  -webkit-font-smoothing: antialiased;
+}
+
+header {
+  height: 66px;
+  /* Medida Movil */
+  /* height: 80px; /* Medida Patalla */
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background-color: #dbdbdb;
+}
+
+footer {
+  padding: 50px;
+  margin-top: 10px;
+  margin-left: 0px;
+  border-radius: 15px;
+  margin-bottom: 0;
+  background-color: #490570;
+  width: 100%;
+}
+
+footer ul {
+  list-style: none;
+  overflow: hidden;
+}
+
+footer ul li {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+}
+
+footer ul li a {
+  color: #efecf1;
+  text-decoration: none;
+}
+
+footer ul li:hover {
+  background: #cc80ff;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+  color: white;
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /* Medida Movil */
+  /* justify-content: space-evenly; /* Medida Patalla */
+  max-width: 992px;
+  margin: 0 auto;
+  position: fixed;
+  /* visibiliza el boton */
+}
+
+.nav .navLogo {
+  padding-top: 2px;
+  padding-left: 2px;
+  color: white;
+  text-decoration: none;
+  /* Medida Movil */
+  /* padding-top: 7px; /* Medida Pantalla */
+}
+
+.nav .navLogo:hover {
+  -webkit-transform: scale(150%);
+          transform: scale(150%);
+  -webkit-transition: all;
+  transition: all;
+  -webkit-transition-duration: 2s;
+          transition-duration: 2s;
+}
+
+.nav .navButton {
+  color: #2f2546;
+  background: none;
+  border: none;
+  font-size: 30px;
+  padding: 0 20px;
+  line-height: 60px;
+  display: block;
+  /*Boton visible pantalla celu */
+  /* display: none; /* Boton invisible para patalla completa*/
+}
+
+.nav .navRegistro {
+  -webkit-text-decoration: dashed;
+          text-decoration: dashed;
+  color: #2f2546;
+  background: none;
+  border: none;
+  font-size: 13px;
+  padding: 0 20px;
+  line-height: 60px;
+}
+
+.nav .navSeccion {
+  text-decoration: none;
+  color: #2f2546;
+  background: none;
+  border: none;
+  font-size: 13px;
+  padding: 0 20px;
+  line-height: 60px;
+}
+
+.nav .navMenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #2f2546;
+  position: fixed;
+  top: 66px;
+  width: 100%;
+  padding: 20px 0;
+  height: calc(100% - 60px);
+  overflow-y: auto;
+  right: 100%;
+  -webkit-transition: right 0.3s;
+  transition: right 0.3s;
+  /* margin-right: 20px; /*para pantalla completa */
+}
+
+.nav .navMenu .navmenuItem {
+  font-size: 18px;
+  margin: 0 10px;
+  line-height: 70px;
+  /*Medida Movil */
+  /* line-height: 80px; /* Medida Pantalla */
+  text-transform: uppercase;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.nav .navMenu .navmenuItem .navmenuLink {
+  padding: 8px 12px;
+  border-radius: 35px;
+  color: white;
+  text-decoration: none;
+}
+
+.nav .navMenu .navmenuItem .navmenuLink:hover {
+  -webkit-transition: 1s;
+  transition: 1s;
+  background: #54ac84;
+  background-image: -webkit-gradient(linear, right top, left top, from(#54ac84));
+  background-image: linear-gradient(to left, #54ac84);
+}
+
+.nav .nav_Visible {
+  right: 0;
+}
+
+.vistaMovil {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin-top: 20px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.vistaMovil .nombreEmpresa {
+  padding-top: 0px;
+  font-size: 45px;
+}
+
+.vistaMovil .subTitulo {
+  font-size: 15px;
+  padding-bottom: 30px;
+  margin-left: 100px;
+}
+
+.vistaMovil .aa {
+  margin-bottom: 20px;
+  color: white;
+}
+
+.vistaMovil .fraseInicio {
+  padding-bottom: 15px;
+}
+
+.vistaMovil .parrafoPrincipal {
+  padding: 20px;
+  border: 10px solid white;
+  border-radius: 40px;
+  background-color: white;
+  /* width: 550px; /*Vista pantalla */
+}
+
+.vistaMovil .registroButton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #02e0b4;
+  border-radius: 15px;
+  border-style: solid;
+  border-color: #02e0b4;
+  padding: 10px;
+  color: white;
+}
+
+.imagenUno {
+  display: none;
+}
+
+.parrafoSecundario {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  width: 100%;
+  margin-top: 20px;
+  padding: 20px;
+  border: 10px solid white;
+  border-radius: 40px;
+  background-color: white;
+  font-size: 18px;
+}
+
+.parrafoSecundario img {
+  -webkit-transform: scale(60%);
+          transform: scale(60%);
+}
+
+.parrafoPublicidad {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  width: 100%;
+  margin-top: 20px;
+  padding: 20px;
+  border: 10px solid color #02e0b4;
+  border-radius: 40px;
+  background-color: #02e0b4;
+  color: white;
+  font-size: 14px;
+}
+
+.parrafoPublicidad .graficoMovil {
+  border-radius: 12px;
+}
+
+.parrafoPublicidad .cuentaHijo1 {
+  -ms-grid-row: 3;
+  grid-row: 3;
+}
+
+.parrafoPublicidad .cuentaHijo3 {
+  grid-row: 0;
+}
+
+.parrafoPublicidad .cuentaHijo4 {
+  grid-row: 0;
+}
+
+.secionesTitulo1024 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin-top: 20px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.secionesTitulo1024 .parrafoInvertir {
+  color: white;
+}
+
+.secionesTitulo1024 .parrafoInvertirsecundario {
+  color: white;
+  font-size: 14px;
+}
+
+.invertirRetirar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  width: 100%;
+  margin-top: 20px;
+  padding: 20px;
+  border: 10px solid white;
+  border-radius: 40px;
+  background-color: white;
+  font-size: 18px;
+}
+
+.invertirRetirar .tituloInvertirretirar {
+  padding: 20px;
+}
+
+.invertirRetirar img {
+  -webkit-transform: scale(60%);
+          transform: scale(60%);
+}
+
+.secionesTitulo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin-top: 20px;
+  padding: 20px;
+  border: 10px solid #02e0b4;
+  border-radius: 40px;
+  background-color: #02e0b4;
+  color: white;
+}
+
+.tituloRegistro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 10px solid #02e0b4;
+  border-radius: 35px;
+  background-color: #02e0b4;
+  color: white;
+}
+
+.seccionRegistro {
+  display: block;
+  background-color: white;
+  padding: 20px;
+  border: solid #02e0b4;
+  border-radius: 10px;
+}
+
+.descripServicios {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  margin-top: 20px;
+  padding: 20px;
+  border: 10px solid white;
+  border-radius: 40px;
+  background-color: white;
+}
+
+.descripServicios .tamanoImagen {
+  height: 120px;
+  width: 100px;
+}
+
+.descripServicios .textoServicios {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 250px;
+      flex-basis: 250px;
+}
+
+.Costo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  width: 100%;
+  margin-top: 20px;
+  padding: 20px;
+  border: 10px solid white;
+  border-radius: 40px;
+  background-color: white;
+  font-size: 14px;
+}
+
+.Costo .textoCostos {
+  background-color: #02e0b4;
+  border-color: solid #02e0b4;
+  border-radius: 8px;
+  padding: auto;
+}
+
+/* Secion Nosotros */
+.artributosFrase {
+  grid-area: frase;
+  margin-top: 30px;
+}
+
+.forma {
+  display: -ms-grid;
+  display: grid;
+  padding: 10px;
+  background-color: white;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.atributo {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "INNOVADOR INTELIGENTE" "ACCESIBLE CONFIABLE" "SÓLIDO CANCHERO";
+  -ms-grid-rows: (1fr)[3];
+      grid-template-rows: repeat(3, 1fr);
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 15px;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 15px;
+}
+
+.atributo h3 {
+  display: -ms-grid;
+  display: grid;
+  padding: 10px;
+  background-color: white;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.atributo .artributos1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: INNOVADOR;
+  background-color: #ff89a6;
+  color: white;
+}
+
+.atributo .artributos2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: INTELIGENTE;
+  background-color: #f7ac21;
+  color: white;
+}
+
+.atributo .artributos3 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: ACCESIBLE;
+  background-color: #d9e2ff;
+  color: white;
+}
+
+.atributo .artributos4 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: SÓLIDO;
+  background-color: #e087f0;
+  color: white;
+}
+
+.atributo .artributos5 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: CONFIABLE;
+  background-color: #fd3636;
+  color: white;
+}
+
+.atributo .artributos6 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: CANCHERO;
+  background-color: #6ff7e0;
+  color: white;
+}
+
+.pYr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+}
+
+.preguntas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  width: 100%;
+  margin-top: 20px;
+  padding: 20px;
+  border: 10px solid white;
+  border-radius: 40px;
+  background-color: white;
+  font-size: 14px;
+}
+
+.respuestas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  width: 100%;
+  margin-top: 20px;
+  padding: 20px;
+  border: 10px solid #80b7a2;
+  border-radius: 40px;
+  background-color: #80b7a2;
+  font-size: 14px;
+  color: white;
+}
+
+/* Terminos y Privacidad*/
+.formatoBasico2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  margin-top: 20px;
+  padding: 20px;
+  border: 10px solid white;
+  border-radius: 40px;
+  background-color: white;
+  font-size: 14px;
+}
+
+@media only screen and (min-width: 530px) {
+  .navMenu {
+    height: auto;
+  }
+  .parrafoPublicidad {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    gap: 10px;
+    width: 100%;
+    margin-top: 20px;
+    padding: 20px;
+    border: 10px solid #02e0b4;
+    border-radius: 40px;
+    background-color: #02e0b4;
+    color: white;
+    font-size: 14px;
+  }
+  .descripServicios {
+    display: block;
+  }
+  /* Secion Nosotros */
+  /* Seccion Como Empiezo? */
+  /* Preguntas Frecuentes? */
+  /* Sección Contacto? y registro */
+  /* Terminos y Privacidad*/
+}
+
+/* Fin de la adaptación a tablet */
+@media only screen and (min-width: 1024px) {
+  .bodyGeneral {
+    padding: 100px 20px 0px;
+  }
+  .nav .navLogo {
+    padding-left: 10px;
+  }
+  .nav .navRegistro {
+    font-size: 20px;
+  }
+  .nav .navSeccion {
+    font-size: 20px;
+  }
+  .nav .navMenu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style: none;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    background-color: #2f2546;
+    position: fixed;
+    top: 66px;
+    width: 100%;
+    padding: 0px 0;
+    overflow-y: auto;
+    -webkit-transition: right 0.3s;
+    transition: right 0.3s;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .formatoInicio {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .formatoInicio .vistaMovil {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .formatoInicio .vistaMovil .nombreEmpresa {
+    padding-top: 0px;
+    font-size: 65px;
+    margin-left: 35px;
+  }
+  .formatoInicio .vistaMovil .subTitulo {
+    margin-left: 40px;
+  }
+  .formatoInicio .vistaMovil .aa {
+    margin-left: 30px;
+  }
+  .formatoInicio .vistaMovil .parrafoPrincipal {
+    width: 500px;
+  }
+  .imagenUno {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-flex: 2;
+        -ms-flex-positive: 2;
+            flex-grow: 2;
+    border-radius: 20px;
+    margin-top: 60px;
+  }
+  .imagenUno img {
+    border: solid #2f2546;
+    border-radius: 20px;
+  }
+  .parrafoSecundario {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .parrafoSecundario .imagen1024 {
+    -webkit-transform: scale();
+            transform: scale();
+  }
+  .parrafoPublicidad {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    gap: 10px;
+    width: 100%;
+    margin-top: 20px;
+    padding: 20px;
+    border: 10px solid #02e0b4;
+    border-radius: 40px;
+    background-color: #02e0b4;
+    color: white;
+    font-size: 14px;
+  }
+  .secionesTitulo1024 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    margin-top: 20px;
+    padding: 20px;
+    border: 10px solid #02e0b4;
+    border-radius: 40px;
+    background-color: #02e0b4;
+    color: white;
+  }
+  .invertirRetirar {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 16px;
+  }
+  .invertirRetirar .imagensecundario {
+    -webkit-transform: scale(50%);
+            transform: scale(50%);
+  }
+  .descripServicios {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  /* Seccion Como Empiezo? */
+  /* Sesicon Registro */
+  .seccionRegistro {
+    margin-left: 170px;
+  }
+  .tituloRegistro {
+    margin-top: 35px;
+  }
+}
+/*# sourceMappingURL=estilos.css.map */
