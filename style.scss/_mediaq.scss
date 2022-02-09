@@ -14,12 +14,18 @@
       width: 100%;
       margin-top: 20px;
       padding: 20px;
+
+  
+    }
+
+    .parrafo--Sass2 {
+
+      @extend .parrafoPublicidad;
       border: 10px solid $colorboti3;
       border-radius: 40px;
       background-color: $colorboti3;
       color: white;
       font-size: 14px;
-  
     }
   
     .descripServicios {
