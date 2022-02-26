@@ -1,0 +1,28 @@
+.tamño1 {
+  transform: scale(80%);
+  column-gap: 0;
+
+}
+
+.empiezoSec {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+
+
+  .aa {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    row-gap: 0;
+
+  }
+
+  .ab {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    row-gap: 4;
+
+  }
+}

@@ -6,7 +6,7 @@
 }
 
 .bodyGeneral {
-  background-color: #9d4cfd;
+  background-color: whitesmoke;
   font-family: 'Poppins', sans-serif;
   -webkit-text-decoration-color: #2f2546;
           text-decoration-color: #2f2546;
@@ -37,7 +37,8 @@ footer {
   margin-left: 0px;
   border-radius: 15px;
   margin-bottom: 0;
-  background-color: #490570;
+  background: linear-gradient(45deg, rgba(86, 58, 250, 0.9) 0%, rgba(116, 15, 214, 0.9) 100%), url("../images/counts-bg.png") center center no-repeat;
+  background-size: cover;
   width: 100%;
 }
 
@@ -57,11 +58,14 @@ footer ul li a {
 }
 
 footer ul li:hover {
-  background: #cc80ff;
-  min-width: -webkit-fit-content;
-  min-width: -moz-fit-content;
-  min-width: fit-content;
-  color: white;
+  -webkit-transition: 1s;
+  transition: 1s;
+  border-radius: 5px;
+  text-decoration: underline;
+  color: #fff;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .nav {
@@ -145,12 +149,12 @@ footer ul li:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #2f2546;
+  background: linear-gradient(45deg, rgba(86, 58, 250, 0.9) 0%, rgba(116, 15, 214, 0.9) 100%), url("../images/counts-bg.png") center center no-repeat;
+  background-size: cover;
   position: fixed;
   top: 66px;
   width: 100%;
   padding: 20px 0;
-  height: calc(100% - 60px);
   overflow-y: auto;
   right: 100%;
   -webkit-transition: right 0.3s;
@@ -180,9 +184,12 @@ footer ul li:hover {
 .nav .navMenu .navmenuItem .navmenuLink:hover {
   -webkit-transition: 1s;
   transition: 1s;
-  background: #54ac84;
-  background-image: -webkit-gradient(linear, right top, left top, from(#54ac84));
-  background-image: linear-gradient(to left, #54ac84);
+  border-radius: 5px;
+  text-decoration: underline;
+  color: #fff;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .nav .nav_Visible {
@@ -220,9 +227,8 @@ footer ul li:hover {
   margin-left: 100px;
 }
 
-.vistaMovil .aa {
-  margin-bottom: 20px;
-  color: white;
+.vistaMovil .sinestilo {
+  text-decoration: none;
 }
 
 .vistaMovil .fraseInicio {
@@ -272,8 +278,13 @@ footer ul li:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
   margin-top: 20px;
   padding: 20px;
@@ -350,11 +361,11 @@ footer ul li:hover {
 }
 
 .secionesTitulo1024 .parrafoInvertir {
-  color: white;
+  color: #2f2546;
 }
 
 .secionesTitulo1024 .parrafoInvertirsecundario {
-  color: white;
+  color: #2f2546;
   font-size: 14px;
 }
 
@@ -501,6 +512,12 @@ footer ul li:hover {
 
 /* Secion Nosotros */
 .artributosFrase {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   grid-area: frase;
   margin-top: 30px;
 }
@@ -510,14 +527,17 @@ footer ul li:hover {
   display: grid;
   padding: 10px;
   background-color: white;
-  height: 150px;
-  width: 150px;
   border-radius: 50%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -ms-flex-line-pack: center;
       align-content: center;
+}
+
+.box {
+  height: 150px;
+  width: 150px;
 }
 
 .atributo {
@@ -672,45 +692,85 @@ footer ul li:hover {
   font-size: 14px;
 }
 
+.tamño1 {
+  -webkit-transform: scale(80%);
+          transform: scale(80%);
+  -webkit-column-gap: 0;
+          column-gap: 0;
+}
+
+.empiezoSec {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.empiezoSec .aa {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  row-gap: 0;
+}
+
+.empiezoSec .ab {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  row-gap: 4;
+}
+
 @media only screen and (min-width: 530px) {
   .navMenu {
     height: auto;
   }
-  .parrafoPublicidad {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    gap: 10px;
-    width: 100%;
-    margin-top: 20px;
-    padding: 20px;
-    border: 10px solid #02e0b4;
-    border-radius: 40px;
-    background-color: #02e0b4;
-    color: white;
-    font-size: 14px;
-  }
   .descripServicios {
     display: block;
   }
-  /* Secion Nosotros */
-  /* Seccion Como Empiezo? */
-  /* Preguntas Frecuentes? */
-  /* Sección Contacto? y registro */
-  /* Terminos y Privacidad*/
+  .parrafoSecundario {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .parrafoSecundario .imagen1024 {
+    -webkit-transform: scale(80%);
+            transform: scale(80%);
+  }
 }
 
+/* Secion Nosotros */
+/* Seccion Como Empiezo? */
+/* Preguntas Frecuentes? */
+/* Sección Contacto? y registro */
+/* Terminos y Privacidad */
 /* Fin de la adaptación a tablet */
 @media only screen and (min-width: 1024px) {
   .bodyGeneral {
@@ -734,7 +794,8 @@ footer ul li:hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    background-color: #2f2546;
+    background: linear-gradient(45deg, rgba(86, 58, 250, 0.9) 0%, rgba(116, 15, 214, 0.9) 100%), url("../images/counts-bg.png") center center no-repeat;
+    background-size: cover;
     position: fixed;
     top: 66px;
     width: 100%;
@@ -817,8 +878,8 @@ footer ul li:hover {
             align-items: center;
   }
   .parrafoSecundario .imagen1024 {
-    -webkit-transform: scale();
-            transform: scale();
+    -webkit-transform: scale(100%);
+            transform: scale(100%);
   }
   .parrafoPublicidad {
     display: -webkit-box;
@@ -895,6 +956,20 @@ footer ul li:hover {
             align-items: center;
   }
   /* Seccion Como Empiezo? */
+  .empiezoSec {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
   /* Sesicon Registro */
   .seccionRegistro {
     margin-left: 170px;

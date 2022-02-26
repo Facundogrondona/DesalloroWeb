@@ -4,7 +4,9 @@ footer {
     margin-left: 0px;
     border-radius: 15px;
     margin-bottom: 0;
-    background-color: rgb(73, 5, 112);
+
+    background: linear-gradient(45deg, rgba(86, 58, 250, 0.9) 0%, rgba(116, 15, 214, 0.9) 100%), url("../images/counts-bg.png") center center no-repeat;
+    background-size: cover;
     width: 100%;
   
     ul {
@@ -22,10 +24,14 @@ footer {
         }
   
         &:hover {
-          background: #cc80ff;
-          min-width: fit-content;
-          color: white;
-  
+          transition: 1s;
+          border-radius: 5px;
+          text-decoration: underline; 
+          color: #fff;
+          width: fit-content;
+
+
+
         }
       }
   
